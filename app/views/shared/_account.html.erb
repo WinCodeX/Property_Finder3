@@ -3,8 +3,11 @@
            <a class="nav-link" href="\accounts\sign_out">Sign out</a>
            </li>
            <li class="nav-item">
-           <a class="nav-link" href="\accounts\sign_out">Dashboard</a>
+           <%= link_to dashboard_path, class: "nav-link" do %>
+            Dashboard >
+            <% end %>
            </li>
+
            <% else %>
           <li class="nav-item">
           <a class="nav-link" href="\accounts\sign_in">Sign in</a>
